@@ -1,1 +1,6 @@
 D:\CSharp\Tests\StringTrimmer\StringTrimmer\bin\Debug\StringTrimmer.exe.config
+D:\CSharp\Tests\StringTrimmer\StringTrimmer\obj\Debug\StringTrimmer.csprojResolveAssemblyReference.cache
+D:\CSharp\Tests\StringTrimmer\StringTrimmer\bin\Debug\StringTrimmer.exe
+D:\CSharp\Tests\StringTrimmer\StringTrimmer\bin\Debug\StringTrimmer.pdb
+D:\CSharp\Tests\StringTrimmer\StringTrimmer\obj\Debug\StringTrimmer.exe
+D:\CSharp\Tests\StringTrimmer\StringTrimmer\obj\Debug\StringTrimmer.pdb
