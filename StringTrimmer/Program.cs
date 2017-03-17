@@ -32,13 +32,31 @@ namespace StringTrimmer
 
             var parts1 = fullInfo.Split(new[] { "(" }, StringSplitOptions.RemoveEmptyEntries);
 
+            // Если строка не разделена на две части, возвратить false.
+            if (parts1.Length != 2)
+            {
+                YesOrNot = false;
+            }
+
             foreach (var s in parts1)
             {
                 Console.WriteLine("|" + s + "|");
             }
 
-            Console.WriteLine($"Значение YesOrNot = {YesOrNot}");
+            Console.ForegroundColor = ConsoleColor.Green;
+            Console.WriteLine();
+            if (YesOrNot)
+            {
+                Console.ForegroundColor = ConsoleColor.Green;
+                Console.WriteLine($"Значение YesOrNot = {YesOrNot}");
+            }
+            else
+            {
+                Console.ForegroundColor = ConsoleColor.Red;
+                Console.WriteLine($"Значение YesOrNot = {YesOrNot}");
+            }
 
+            Console.ForegroundColor = ConsoleColor.Gray;
 
         }
     }
