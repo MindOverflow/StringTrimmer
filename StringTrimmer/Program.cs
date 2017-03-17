@@ -60,11 +60,13 @@ namespace StringTrimmer
 
             Console.ForegroundColor = ConsoleColor.Gray;
 
+            // Далее, пример с MSDN:
+            // https://msdn.microsoft.com/en-us/library/d4tt83f9(v=vs.110).aspx
             Console.WriteLine();
             char[] charsToTrim = { '*', ' ', '\'' };
-            string banner = "*** Much Ado About Nothing ***";
+            string banner = "***\' Much Ado About Nothing \' ***";
             string result = banner.Trim(charsToTrim);
-            Console.WriteLine("Trimmmed\n   {0}\nto\n   '{1}'", banner, result);
+            Console.WriteLine("Trimmmed\n   {0}\nto\n   |{1}|", banner, result);
 
         }
     }
