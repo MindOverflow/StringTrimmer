@@ -1,0 +1,1 @@
+D:\CSharp\Tests\StringTrimmer\StringTrimmer\bin\Debug\StringTrimmer.exe.config
