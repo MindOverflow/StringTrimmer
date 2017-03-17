@@ -18,7 +18,9 @@ namespace StringTrimmer
 
             int lineNumber = -1;
 
-            fullInfo = "Что-то слева от скобки (a( что то справа от скобки";
+            //fullInfo = "Что-то слева от скобки (a( что то справа от скобки";
+            fullInfo = "Что-то слева (()(от скобки (( что то справа от скобки";
+
 
             if (string.IsNullOrEmpty(fullInfo))
             {
@@ -57,6 +59,12 @@ namespace StringTrimmer
             }
 
             Console.ForegroundColor = ConsoleColor.Gray;
+
+            Console.WriteLine();
+            char[] charsToTrim = { '*', ' ', '\'' };
+            string banner = "*** Much Ado About Nothing ***";
+            string result = banner.Trim(charsToTrim);
+            Console.WriteLine("Trimmmed\n   {0}\nto\n   '{1}'", banner, result);
 
         }
     }
