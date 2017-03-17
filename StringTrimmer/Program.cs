@@ -18,7 +18,7 @@ namespace StringTrimmer
 
             int lineNumber = -1;
 
-            fullInfo = "Что-то слева от скобки (( что то справа от скобки";
+            fullInfo = "Что-то слева от скобки (a( что то справа от скобки";
 
             if (string.IsNullOrEmpty(fullInfo))
             {
@@ -28,6 +28,13 @@ namespace StringTrimmer
             else
             {
                 YesOrNot = true;
+            }
+
+            var parts1 = fullInfo.Split(new[] { "(" }, StringSplitOptions.RemoveEmptyEntries);
+
+            foreach (var s in parts1)
+            {
+                Console.WriteLine("|" + s + "|");
             }
 
             Console.WriteLine($"Значение YesOrNot = {YesOrNot}");
